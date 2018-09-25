@@ -5,12 +5,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    planetData: {},
+    shipData: {},
+    peopleData: {},
+    userInput: '',
+    testingData: 'data is working!'
   },
   mutations: {
-
-  },
-  actions: {
-
+    update (planet) {
+      this.planetData = planet
+    }
   }
 })
