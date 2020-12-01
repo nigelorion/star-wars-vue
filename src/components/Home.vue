@@ -72,7 +72,7 @@ export default {
     searchCall: function () {
       this.oops = false
       this.loading = true
-      axios.get('https://swapi.co/api/' + this.type + '/?search=' + this.userInput).then(response => {
+      axios.get('https://swapi.dev/api/' + this.type + '/?search=' + this.userInput).then(response => {
         this.result = response.data.results[0]
         this.userInput = this.result.name
         this.$store.state.peopleData = this.result
@@ -101,7 +101,7 @@ export default {
       this.oops = false
       this.loading = true
       this.randomGen()
-      axios.get('https://swapi.co/api/people/' + this.randomNum).then(response => {
+      axios.get('https://swapi.dev/api/people/' + this.randomNum).then(response => {
         this.result = response.data
         this.userInput = this.result.name
         this.$store.state.peopleData = this.result
