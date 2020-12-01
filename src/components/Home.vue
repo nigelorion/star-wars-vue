@@ -16,7 +16,7 @@
       <p>oops! try a different search</p>
 
     </div>
-    <img v-if="loading" src="https://loading.io/spinners/eclipse/lg.ring-loading-gif.gif" alt="">
+    <img v-if="loading" src="https://giphy.com/gifs/H27gfrn7gIWlmQtzvM/html5" alt="Yoda loading gif">
     <div v-if="!loading">
     
       <h1>{{peopleData.name}}</h1>
@@ -148,6 +148,8 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <style scoped lang="scss">
